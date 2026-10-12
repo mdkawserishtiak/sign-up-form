@@ -224,13 +224,21 @@ Modern Normalize End
 ========
 */
 
+.italic {
+  font-style: italic;
+}
+
 .container {
   height: 100vh;
-  /* border: 1px solid red; */
+
+  display: flex;
+  align-items: center;
+
+  background-color: whitesmoke;
 }
 
 .left {
-  width: 33vw;
+  width: 1600px;
   height: inherit;
 
   display: flex;
@@ -275,4 +283,126 @@ Modern Normalize End
 
 .left__link {
   color: inherit;
+}
+
+.right {
+  padding-left: 50px;
+  padding-right: 230px;
+}
+
+.top-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form {
+  color: #292933;
+
+  position: relative;
+  z-index: 0;
+
+  margin-top: 40px;
+}
+
+.form::before {
+  content: "";
+
+  width: 1070px;
+  height: 370px;
+
+  position: absolute;
+  left: -50px;
+  top: -15px;
+  z-index: -1;
+
+  background-color: white;
+
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form__heading {
+  font-size: 1.8rem;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 70px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input {
+  padding: 6px 16px;
+
+  font-size: 1.5rem;
+
+  outline: none;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+.input:focus {
+  border: 1px solid blue;
+
+  -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.password:user-invalid {
+  border: 1px solid red;
+}
+
+.button {
+  display: block;
+
+  padding: 15px 50px;
+  margin-top: 80px;
+
+  background-color: #596d48;
+  color: white;
+
+  border: 2px solid #596d48;
+  border-radius: 9px;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: white;
+  color: #596d48;
+
+  border: 2px solid #596d48;
+}
+
+.bottom-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.bottom-text__link {
+  text-decoration: none;
+  color: #596d48;
+
+  transition: 0.2s;
+}
+
+.bottom-text__link:hover {
+  text-decoration: underline;
 }

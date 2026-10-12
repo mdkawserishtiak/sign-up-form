@@ -33,7 +33,99 @@
           >
         </p>
       </section>
-      <section id="right"></section>
+      <section class="right">
+        <p class="top-text">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepset dreams. <br />
+          Sign up
+          <em>now</em>
+          to get started. <br />
+          <br />
+          You <span class="italic">know</span> you want to.
+        </p>
+
+        <form action="#" method="post" class="form">
+          <h2 class="form__heading">Let's do this!</h2>
+
+          <div class="inputs">
+            <div class="input-box">
+              <label for="first-name" class="label">First Name</label>
+              <input
+                type="text"
+                class="input"
+                name="first-name"
+                id="first-name"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="last-name" class="label">Last Name</label>
+              <input
+                type="text"
+                class="input"
+                name="last-name"
+                id="last-name"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="email" class="label">Email</label>
+              <input
+                type="email"
+                class="input"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="phone-number" class="label">Phone Number</label>
+              <input
+                type="tel"
+                class="input"
+                name="phone-number"
+                id="phone-number"
+                pattern="^\+?[1-9]\d{1,14}$"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="password" class="label">Password</label>
+              <input
+                type="password"
+                class="input password"
+                name="password"
+                id="password"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="confirm-password" class="label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="input password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="button">Create Account</button>
+        </form>
+
+        <p class="bottom-text">
+          Already have an account?
+          <a href="#" class="bottom-text__link">Log in</a>
+        </p>
+      </section>
     </main>
   </body>
 </html>
